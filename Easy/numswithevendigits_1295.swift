@@ -8,6 +8,3 @@ func findNumbers(_ nums: [Int]) -> Int {
     }
     return count 
 }
-
-var nums = [555,901,482,1771]
-print(findNumbers(nums))

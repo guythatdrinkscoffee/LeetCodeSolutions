@@ -14,4 +14,3 @@ func numberOfSteps (_ num: Int) -> Int {
     }    
     return count 
 }
-
