@@ -19,5 +19,6 @@ func sortArrayByParity(_ A: [Int]) -> [Int] {
             oddIndex += 1
         }
     }
+    
     return arrayCopy
 }

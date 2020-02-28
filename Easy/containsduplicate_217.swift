@@ -2,7 +2,10 @@
 //Brute Force Solution 
 func containsDuplicate(_ nums: [Int]) -> Bool {
     var dict: [Int:Int] = [:]
-    for n in nums{ dict[n] = 0 }
+
+    for n in nums{
+        dict[n] = 0 
+    }
     
     for k in nums{
         dict[k]! += 1 
@@ -10,9 +13,8 @@ func containsDuplicate(_ nums: [Int]) -> Bool {
             return true 
         }
     }
+
     return false
-
-
 }
 
 //Optimal Solution

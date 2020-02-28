@@ -11,6 +11,6 @@ func subtractProductAndSum(_ n: Int) -> Int {
         sum += digit 
         num /= 10
     }
-
+    
     return product - sum 
 }

@@ -2,6 +2,7 @@
 //BruteForce Solution using a Dictionary
 func singleNumber(_ nums: [Int]) -> Int {
     var dict = [Int:Int]()
+    
     for n in nums {
        dict[n] = 0
     }

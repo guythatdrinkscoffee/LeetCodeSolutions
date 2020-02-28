@@ -27,5 +27,6 @@ func fib2(_ N: Int) -> Int {
         f0 = f1 
         f1 = curr
     }
+    
     return curr 
 }
