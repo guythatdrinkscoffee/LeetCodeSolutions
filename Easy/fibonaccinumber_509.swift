@@ -5,9 +5,9 @@ Given N, calculate F(N).
 */
 //Recursive Solution
 func fib(_ N: Int) -> Int {
-    if(N == 0){
+    if N == 0 {
         return N
-    }else if N == 1 {
+    } else if N == 1 {
         return 1
     }
     return fib(N-1) + fib(N-2)
@@ -17,16 +17,14 @@ func fib(_ N: Int) -> Int {
 func fib2(_ N: Int) -> Int {
     if N  == 0 {
         return 0
-    }else if N == 1 {
+    } else if N == 1 {
         return 1
     }
-
-    var f0 = 0, f1 = 1, curr = 0
-    for _ in 1..<N{ 
-        curr = f0 + f1
-        f0 = f1 
-        f1 = curr
+    var fibN = 0, fibK = 1, curr = 0
+    for _ in 1..<N {
+        curr = fibN + fibK
+        fibN = fibK
+        fibK = curr
     }
-    
-    return curr 
+    return curr
 }

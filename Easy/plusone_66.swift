@@ -2,9 +2,8 @@
 func plusOne(_ digits: [Int]) -> [Int] {
     var currentDigit = digits.count - 1
     var digitsCopy = digits
-  
-    while(currentDigit > -1){
-      if digitsCopy[currentDigit] == 9{
+    while currentDigit > -1 {
+      if digitsCopy[currentDigit] == 9 {
           digitsCopy[currentDigit] = 0
           if currentDigit == 0 {
               digitsCopy[currentDigit] = 1
@@ -16,6 +15,5 @@ func plusOne(_ digits: [Int]) -> [Int] {
       digitsCopy[currentDigit] += 1
       break
     }
-
     return digitsCopy
 }

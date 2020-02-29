@@ -3,14 +3,12 @@ func subtractProductAndSum(_ n: Int) -> Int {
     var num = n
     var digit = 0
     var product = 1
-    var sum = 0 
-    
-    while(num != 0){
+    var sum = 0
+    while num != 0 {
         digit = num % 10
         product *= digit
-        sum += digit 
+        sum += digit
         num /= 10
     }
-    
-    return product - sum 
+    return product - sum
 }

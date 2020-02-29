@@ -3,16 +3,13 @@
 func numberOfSteps (_ num: Int) -> Int {
     var count = 0
     var currentNum = num
-    
     while currentNum != 0 {
         if currentNum % 2 == 0 {
             currentNum /= 2
-            
-        }else{
+        } else {
             currentNum -= 1
         }
         count += 1
-    }    
-    
-    return count 
+    }
+    return count
 }

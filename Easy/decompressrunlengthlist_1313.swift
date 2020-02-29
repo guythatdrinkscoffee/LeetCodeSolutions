@@ -6,9 +6,8 @@ Return the decompressed list.
 */
 func decompressRLElist(_ nums: [Int]) -> [Int] {
     var decompressedList = [Int]()
-    var i = 0, j = i + 1 
-
-    while (j < nums.count){
+    var i = 0, j = i + 1
+    while j < nums.count {
         let a = nums[i]
         let b = nums[j]
         let decompressed = Array(repeating: b, count: a)
@@ -16,6 +15,5 @@ func decompressRLElist(_ nums: [Int]) -> [Int] {
         i += 2
         j += 2
     }
-    
     return decompressedList
 }
