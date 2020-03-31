@@ -2,18 +2,18 @@
 func inorderTraversal(_ root: TreeNode?) -> [Int]{
     var nodeStack = [TreeNode]()
     var out = [Int]()
-    var curr = root 
+    var currentNode = root 
     
-    while curr != nil || !nodeStack.isEmpty {
-        while curr != nil {
-            nodeStack.append(curr!)
-            curr = curr?.left
+    while currentNode != nil || !nodeStack.isEmpty {
+        while currentNode != nil {
+            nodeStack.append(currentNode!)
+            currentNode = currentNode?.left
         }
 
-        curr = nodeStack.popLast()
-        out.append(curr!.val)
+        currentNode = nodeStack.popLast()
+        out.append(currentNode!.val)
 
-        curr = curr?.right
+        currentNode = currentNode?.right
     }
 
     return out
