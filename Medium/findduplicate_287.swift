@@ -4,7 +4,7 @@ must exist. Assume that there is only one duplicate number, find the duplicate
 one. 
 */
 func findDuplicate(_ nums: [Int]) -> Int {
-    //Iteratively using two indeces
+    //Iteratively using two indices
     // var j = nums.count - 1
     // for i in 0..<nums.count {
     //     while i < j {
