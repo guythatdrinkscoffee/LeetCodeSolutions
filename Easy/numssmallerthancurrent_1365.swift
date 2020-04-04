@@ -8,7 +8,6 @@ func smallerNumbersThanCurrent(_ nums: [Int]) -> [Int] {
     var smallerNumbers = [Int]()
     var count = 0
     
-    
     for i in 0..<nums.count {
         if table[nums[i]] != nil {
             smallerNumbers.append(table[nums[i]]!)
