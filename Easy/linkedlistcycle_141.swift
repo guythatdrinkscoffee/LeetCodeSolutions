@@ -4,15 +4,15 @@ represents the position (0-indexed) in the linked list where tail connects to.
 If pos is -1, then there is no cycle in the linked list. */
 func hasCycle(_ head: ListNode?) -> Bool {
     var slow = head
-    var fast = head?.nextFastest
+    var fast = head?.next
     
     while fast != nil {
-        let nextFastest = fast?.nextFastest 
+        let nextFastest = fast?.next
         if slow === nextFastest{
             return true
         }
-        fast = nextFastest?.nextFastest
-        slow = slow?.nextFastest
+        fast = nextFastest?.next
+        slow = slow?.next
     }
     
     return false
