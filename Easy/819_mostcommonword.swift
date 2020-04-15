@@ -21,5 +21,5 @@ func mostCommonWord(_ paragraph: String, _ banned: [String]) -> String {
         }
     }      
         
-    return freq.max { a,b in a.value < b.value }?.key ?? ""   
+    return freq.max { a,b in a.value < b.value }?.key  ?? ""
 }
