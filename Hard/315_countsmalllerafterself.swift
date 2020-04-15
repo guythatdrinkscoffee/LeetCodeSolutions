@@ -19,7 +19,6 @@ func countSmaller(_ nums: [Int]) -> [Int] {
         count = 0
         j = nums.count - 1
         i += 1
-    
     }
     
     return out
