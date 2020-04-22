@@ -5,7 +5,7 @@ using namespace std;
 int removeDuplicates(vector<int>& nums){
     int arrLength = nums.size();
     if (arrLength < 1){
-        return 0
+        return 0;
     }
     
     int p1 = 0;
