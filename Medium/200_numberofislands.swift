@@ -11,7 +11,9 @@ func numIslands(_ grid: [[Character]]) -> Int {
     for i in 0..<grid.count{
         for j in 0..<grid[i].count{
             //when we find a "1" we bfs with that (i,j) as the root
-            numberOfIslands += bfs(&myGrid, i, j)
+            if myGrid[i][j] == "1" {
+                numberOfIslands += bfs(&myGrid, i, j);
+            }
         }
     }
 
