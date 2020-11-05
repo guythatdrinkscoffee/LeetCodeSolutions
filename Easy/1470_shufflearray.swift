@@ -3,8 +3,8 @@ func shuffle(_ nums: [Int], _ n: Int) -> [Int] {
     var arr2 = [Int]()
     var ans = [Int]()
         
-    arr1.append(contentsOf: nums[0..<nums.count/2])
-    arr2.append(contentsOf: nums[(nums.count/2)...])
+    arr1.append(contentsOf: nums[0..<n])
+    arr2.append(contentsOf: nums[n...])
         
     var i = 0 
 
